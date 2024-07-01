@@ -119,7 +119,7 @@ const SudokuBoard = () => {
 
   return (
     <div className="container">
-      <h1 className="title">SUDOKU SOLVER</h1>
+      <h1 className="title">GAURAV SUDOKU SOLVER </h1>
       <div className="sudoku-board">
         {board.map((row, rowIndex) => (
           <div key={rowIndex} className="sudoku-row">
