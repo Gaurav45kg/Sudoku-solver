@@ -1,0 +1,89 @@
+.container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.sudoku-board {
+  display: grid;
+  grid-template-columns: repeat(9, 40px);
+  gap: 1px;
+  justify-content: center;
+  margin: 0 auto;
+  width: max-content;
+  border: 2px solid black;
+}
+
+.sudoku-row {
+  display: contents;
+}
+
+.sudoku-cell {
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.sudoku-cell:focus {
+  border-color: #007bff;
+}
+
+.sudoku-cell:nth-child(3n+1) {
+  border-left: 2px solid black;
+}
+
+.sudoku-cell:nth-child(3n) {
+  border-right: 2px solid black;
+}
+
+.sudoku-row:nth-child(3n+1) .sudoku-cell {
+  border-top: 2px solid black;
+}
+
+.sudoku-row:nth-child(3n) .sudoku-cell {
+  border-bottom: 2px solid black;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.button-group button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+  background-color: #0056b3;
+}
+
+.button-group button:active {
+  background-color: #004080;
+}
+
+.button-group button:nth-child(2) {
+  background-color: #6c757d;
+}
+
+.button-group button:nth-child(2):hover {
+  background-color: #5a6268;
+}
+
+.button-group button:nth-child(2):active {
+  background-color: #343a40;
+}
